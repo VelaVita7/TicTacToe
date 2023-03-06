@@ -1,9 +1,5 @@
-
-
-
-
-
 public class board { 
+	//Setting up how the player can select the row and columns on the board. 
 	private static final String[] rLabels = new String[]{"A","B","C"};
 	private static final String[] cLabels = new String[]{"1","2","3"};
 	public static int[] stringToCoords(String coords){
@@ -46,7 +42,7 @@ public class board {
 		}
 		
 	}
-	
+	// This method is really long, could have improvements to it. 
 	public boolean isWinner(){
 		boolean winner=false;
 		String letter = "X";
