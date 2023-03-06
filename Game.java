@@ -1,5 +1,12 @@
 public class Game { 
 	//fields 
+	/*
+	Tic Tic Ticking time bomb 
+	
+	01000001 00100000 01100010 01110010 01101111 01101011 01100101 01101110 00100000 
+	01110100 01101001 01100011 00100000 01110100 01100001 01100011 00100000 01110100 
+	01101111 01100101 00100000 01100111 01100001 01101101 01100101
+	*/
 	private TicTacGui gui=new TicTacGui();
 	private board b= new board();
 	private Player[] players=new Player[2];
@@ -65,6 +72,8 @@ public class Game {
 		playersPresent=true;
 		return name;
 	}
+	// 01000011 01101111 01101110 01100111 01110010 01100001 01110100 
+	//01110011 00100000 01111001 01101111 01110101 00100000 01100110 01101111 01110101 01101110 01100100 00100000 01101001 01110100 00100001 00100001
 	private boolean congradulations(){
 		gui.displayMsg(players[whoseTurn].getName()+" won the game!");
 		ScoreBoard scoreBoard = new ScoreBoard(players);
